@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+body{
+  width: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: rgba(192, 80, 127, 1);
+  width: 100%;
 }
 
 .brand a {
