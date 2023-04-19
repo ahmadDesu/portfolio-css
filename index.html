@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="#">Brand Name</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <div class="close-icon">
+          <i class="fa fa-times"></i>
+        </div>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section>
+        <div class="container-hero">
+          <div class="content">
+            <div class="text">
+              <h2>Hi, I am a Digital <span>Designer</span></h2>
+              <p>
+                Dedicated to creating beautiful and functional digital design, I
+                am a passionate digital designer with a love of learning.
+                Dedicated to creating beautiful and functional digital design, I
+                am a passionate digital designer with a love of learning.
+                Dedicated to creating beautiful and functional digital design, I
+                am a passionate digital designer with a love of learning.
+              </p>
+              <a href="#" class="button">Hire Me</a>
+            </div>
+            <div class="image">
+              <img src="image/people.JPG" alt="Image description" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="title-grid">Latest Project</h2>
+        <div class="container-grid">
+          <div class="image-grid">
+            <div class="image-hover">
+              <img src="image/mangosteen.png" />
+              <div class="image-description">
+                <h3><a href="https://www.instagram.com/ahmadadyla_/" target="_blank">mangosteen</a></h3>
+              </div>
+            </div>
+            <div class="image-hover">
+              <img src="image/mangosteen.png" />
+              <div class="image-description">
+                <h3>mangosteen</h3>
+              </div>
+            </div>
+            <div class="image-hover">
+              <img src="image/mangosteen.png" />
+              <div class="image-description">
+                <h3>mangosteen</h3>
+              </div>
+            </div>
+            <div class="image-hover">
+              <img src="image/mangosteen.png" />
+              <div class="image-description">
+                <h3 onclick="link()">mangosteen</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="reason-description">
+          <img src="image/hand.png" alt="shake-hand" />
+          <div class="caption">
+            <h2>Why <span>Hiring</span> Me?</h2>
+            <p>
+              Dedicated to creating beautiful and functional digital design, I
+              am a passionate digital designer with a love of learning.
+              Dedicated to creating beautiful and functional digital design, I
+              am a passionate digital designer with a love of learning.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="address">123 Main St. Suite 200, Anytown USA</div>
+    </footer>
+
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const navLinks = document.querySelector(".nav-links");
+      const closeIcon = document.querySelector(".close-icon");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.add("show");
+      });
+
+      closeIcon.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+        navLinks.classList.add("close");
+      });
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.remove("close");
+      });
+    </script>
+  </body>
+</html>
