@@ -175,7 +175,7 @@ nav {
 }
 
 .image-grid img {
-  width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   transition: 0.5s ease;
@@ -201,11 +201,19 @@ nav {
   text-align: center;
 }
 
-.image-description h3 {
-  background-color: #04aa6d;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+.image-hover .auto-layout-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  margin: 0 auto;
 }
 
 .image-hover:hover .image-description {
@@ -385,7 +393,6 @@ footer {
 
   .image-grid img {
     width: 100%;
-    max-width: 200px;
     margin: 0 auto;
   }
 
@@ -426,4 +433,27 @@ footer {
   .address {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 834px) {
+  .container .container-hero .content{
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .container .container-hero .content .image{
+    justify-content: center;
+    margin: 20px 0 20px 0;
+  }
+
+  .container .container-hero .content .image img{
+    transform: rotate(0);
+    border-radius: 20px;
+  }
+
+  .container-grid .image-grid{
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
