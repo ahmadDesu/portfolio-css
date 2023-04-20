@@ -435,7 +435,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1073px) {
   .container .container-hero .content{
     justify-content: center;
     flex-wrap: wrap-reverse;
@@ -451,9 +451,8 @@ footer {
     border-radius: 20px;
   }
 
-  .container-grid .image-grid{
-    justify-content: center;
-    align-items: center;
+  .container .container-hero .content .text{
+    text-align: center;
   }
   
 }
